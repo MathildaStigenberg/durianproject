@@ -1,2 +1,5 @@
 # Ignore rawdata
 4_Tean_Teh_2017/
+
+# Ignore analyses folder, too big for github
+analyses/
