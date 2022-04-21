@@ -1,0 +1,8 @@
+TrimmomaticPE: Started with arguments:
+ -threads 2 /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/untrimmed/SRR6040095_scaffold_10.1.fastq.gz /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/untrimmed/SRR6040095_scaffold_10.2.fastq.gz -baseout /home/mathi/genome_analysis/durianproject/analyses/3_trim/3_trim_transcript/SRR6040095_scaffold_10.fq.gz ILLUMINACLIP:/sw/bioinfo/trimmomatic/0.39/snowy/adapters/TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using templated Output files: /home/mathi/genome_analysis/durianproject/analyses/3_trim/3_trim_transcript/SRR6040095_scaffold_10_1P.fq.gz /home/mathi/genome_analysis/durianproject/analyses/3_trim/3_trim_transcript/SRR6040095_scaffold_10_1U.fq.gz /home/mathi/genome_analysis/durianproject/analyses/3_trim/3_trim_transcript/SRR6040095_scaffold_10_2P.fq.gz /home/mathi/genome_analysis/durianproject/analyses/3_trim/3_trim_transcript/SRR6040095_scaffold_10_2U.fq.gz
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Quality encoding detected as phred33
+Input Read Pairs: 13044149 Both Surviving: 13037315 (99.95%) Forward Only Surviving: 795 (0.01%) Reverse Only Surviving: 5907 (0.05%) Dropped: 132 (0.00%)
+TrimmomaticPE: Completed successfully
