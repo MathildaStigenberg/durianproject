@@ -1,85 +1,95 @@
 	STAR --runThreadN 8 --runMode genomeGenerate --genomeDir /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/10_indexed_genome --genomeFastaFiles /home/mathi/genome_analysis/durianproject/analyses/9_repeatmasker/pilon.fasta.masked
 	STAR version: 2.7.9a   compiled: 2021-10-20T18:01:41+0200 rackham5.uppmax.uu.se:/sw/bioinfo/star/2.7.9a/src/STAR-2.7.9a/source
-May 08 21:20:11 ..... started STAR run
-May 08 21:20:11 ... starting to generate Genome files
+May 12 17:56:47 ..... started STAR run
+May 12 17:56:47 ... starting to generate Genome files
 !!!!! WARNING: --genomeSAindexNbases 14 is too large for the genome size=28680517, which may cause seg-fault at the mapping step. Re-run genome generation with recommended --genomeSAindexNbases 11
-May 08 21:20:12 ... starting to sort Suffix Array. This may take a long time...
-May 08 21:20:12 ... sorting Suffix Array chunks and saving them to disk...
-May 08 21:20:20 ... loading chunks from disk, packing SA...
-May 08 21:20:21 ... finished generating suffix array
-May 08 21:20:21 ... generating Suffix Array index
-May 08 21:20:32 ... completed Suffix Array index
-May 08 21:20:32 ... writing Genome to disk ...
-May 08 21:20:33 ... writing Suffix Array to disk ...
-May 08 21:20:35 ... writing SAindex to disk
-May 08 21:20:50 ..... finished successfully
-	STAR --runThreadN 8 --genomeDir /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/10_indexed_genome --readFilesIn /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6040092_scaffold_10.1.fastq.gz /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6040092_scaffold_10.2.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/SRR6040092_scaffold_10_mapped --outSAMtype BAM Unsorted
+May 12 17:56:48 ... starting to sort Suffix Array. This may take a long time...
+May 12 17:56:49 ... sorting Suffix Array chunks and saving them to disk...
+May 12 17:56:57 ... loading chunks from disk, packing SA...
+May 12 17:56:58 ... finished generating suffix array
+May 12 17:56:58 ... generating Suffix Array index
+May 12 17:57:08 ... completed Suffix Array index
+May 12 17:57:08 ... writing Genome to disk ...
+May 12 17:57:09 ... writing Suffix Array to disk ...
+May 12 17:57:11 ... writing SAindex to disk
+May 12 17:57:25 ..... finished successfully
+	STAR --runThreadN 8 --genomeDir /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/10_indexed_genome --readFilesIn /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6040092_scaffold_10.1.fastq.gz /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6040092_scaffold_10.2.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/SRR6040092_scaffold_10_mapped --outSAMtype BAM SortedByCoordinate
 	STAR version: 2.7.9a   compiled: 2021-10-20T18:01:41+0200 rackham5.uppmax.uu.se:/sw/bioinfo/star/2.7.9a/src/STAR-2.7.9a/source
-May 08 21:20:50 ..... started STAR run
-May 08 21:20:50 ..... loading genome
-May 08 21:20:51 ..... started mapping
-May 08 21:22:17 ..... finished mapping
-May 08 21:22:17 ..... finished successfully
-	STAR --runThreadN 8 --genomeDir /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/10_indexed_genome --readFilesIn /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6040093_scaffold_10.1.fastq.gz /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6040093_scaffold_10.2.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/SRR6040093_scaffold_10_mapped --outSAMtype BAM Unsorted
+May 12 17:57:25 ..... started STAR run
+May 12 17:57:25 ..... loading genome
+May 12 17:57:27 ..... started mapping
+May 12 17:58:54 ..... finished mapping
+May 12 17:58:54 ..... started sorting BAM
+May 12 17:59:11 ..... finished successfully
+	STAR --runThreadN 8 --genomeDir /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/10_indexed_genome --readFilesIn /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6040093_scaffold_10.1.fastq.gz /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6040093_scaffold_10.2.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/SRR6040093_scaffold_10_mapped --outSAMtype BAM SortedByCoordinate
 	STAR version: 2.7.9a   compiled: 2021-10-20T18:01:41+0200 rackham5.uppmax.uu.se:/sw/bioinfo/star/2.7.9a/src/STAR-2.7.9a/source
-May 08 21:22:17 ..... started STAR run
-May 08 21:22:17 ..... loading genome
-May 08 21:22:18 ..... started mapping
-May 08 21:23:23 ..... finished mapping
-May 08 21:23:23 ..... finished successfully
-	STAR --runThreadN 8 --genomeDir /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/10_indexed_genome --readFilesIn /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6040094_scaffold_10.1.fastq.gz /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6040094_scaffold_10.2.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/SRR6040094_scaffold_10_mapped --outSAMtype BAM Unsorted
+May 12 17:59:11 ..... started STAR run
+May 12 17:59:12 ..... loading genome
+May 12 17:59:13 ..... started mapping
+May 12 18:00:18 ..... finished mapping
+May 12 18:00:18 ..... started sorting BAM
+May 12 18:00:29 ..... finished successfully
+	STAR --runThreadN 8 --genomeDir /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/10_indexed_genome --readFilesIn /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6040094_scaffold_10.1.fastq.gz /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6040094_scaffold_10.2.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/SRR6040094_scaffold_10_mapped --outSAMtype BAM SortedByCoordinate
 	STAR version: 2.7.9a   compiled: 2021-10-20T18:01:41+0200 rackham5.uppmax.uu.se:/sw/bioinfo/star/2.7.9a/src/STAR-2.7.9a/source
-May 08 21:23:23 ..... started STAR run
-May 08 21:23:23 ..... loading genome
-May 08 21:23:24 ..... started mapping
-May 08 21:26:13 ..... finished mapping
-May 08 21:26:13 ..... finished successfully
-	STAR --runThreadN 8 --genomeDir /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/10_indexed_genome --readFilesIn /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6040096_scaffold_10.1.fastq.gz /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6040096_scaffold_10.2.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/SRR6040096_scaffold_10_mapped --outSAMtype BAM Unsorted
+May 12 18:00:29 ..... started STAR run
+May 12 18:00:30 ..... loading genome
+May 12 18:00:31 ..... started mapping
+May 12 18:03:24 ..... finished mapping
+May 12 18:03:24 ..... started sorting BAM
+May 12 18:04:32 ..... finished successfully
+	STAR --runThreadN 8 --genomeDir /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/10_indexed_genome --readFilesIn /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6040096_scaffold_10.1.fastq.gz /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6040096_scaffold_10.2.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/SRR6040096_scaffold_10_mapped --outSAMtype BAM SortedByCoordinate
 	STAR version: 2.7.9a   compiled: 2021-10-20T18:01:41+0200 rackham5.uppmax.uu.se:/sw/bioinfo/star/2.7.9a/src/STAR-2.7.9a/source
-May 08 21:26:13 ..... started STAR run
-May 08 21:26:13 ..... loading genome
-May 08 21:26:15 ..... started mapping
-May 08 21:27:32 ..... finished mapping
-May 08 21:27:32 ..... finished successfully
-	STAR --runThreadN 8 --genomeDir /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/10_indexed_genome --readFilesIn /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6040097_scaffold_10.1.fastq.gz /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6040097_scaffold_10.2.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/SRR6040097_scaffold_10_mapped --outSAMtype BAM Unsorted
+May 12 18:04:33 ..... started STAR run
+May 12 18:04:33 ..... loading genome
+May 12 18:04:34 ..... started mapping
+May 12 18:05:54 ..... finished mapping
+May 12 18:05:54 ..... started sorting BAM
+May 12 18:06:18 ..... finished successfully
+	STAR --runThreadN 8 --genomeDir /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/10_indexed_genome --readFilesIn /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6040097_scaffold_10.1.fastq.gz /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6040097_scaffold_10.2.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/SRR6040097_scaffold_10_mapped --outSAMtype BAM SortedByCoordinate
 	STAR version: 2.7.9a   compiled: 2021-10-20T18:01:41+0200 rackham5.uppmax.uu.se:/sw/bioinfo/star/2.7.9a/src/STAR-2.7.9a/source
-May 08 21:27:33 ..... started STAR run
-May 08 21:27:33 ..... loading genome
-May 08 21:27:34 ..... started mapping
-May 08 21:28:11 ..... finished mapping
-May 08 21:28:11 ..... finished successfully
-	STAR --runThreadN 8 --genomeDir /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/10_indexed_genome --readFilesIn /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6156066_scaffold_10.1.fastq.gz /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6156066_scaffold_10.2.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/SRR6156066_scaffold_10_mapped --outSAMtype BAM Unsorted
+May 12 18:06:19 ..... started STAR run
+May 12 18:06:19 ..... loading genome
+May 12 18:06:20 ..... started mapping
+May 12 18:06:54 ..... finished mapping
+May 12 18:06:55 ..... started sorting BAM
+May 12 18:06:59 ..... finished successfully
+	STAR --runThreadN 8 --genomeDir /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/10_indexed_genome --readFilesIn /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6156066_scaffold_10.1.fastq.gz /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6156066_scaffold_10.2.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/SRR6156066_scaffold_10_mapped --outSAMtype BAM SortedByCoordinate
 	STAR version: 2.7.9a   compiled: 2021-10-20T18:01:41+0200 rackham5.uppmax.uu.se:/sw/bioinfo/star/2.7.9a/src/STAR-2.7.9a/source
-May 08 21:28:11 ..... started STAR run
-May 08 21:28:11 ..... loading genome
-May 08 21:28:12 ..... started mapping
-May 08 21:29:02 ..... finished mapping
-May 08 21:29:03 ..... finished successfully
-	STAR --runThreadN 8 --genomeDir /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/10_indexed_genome --readFilesIn /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6156067_scaffold_10.1.fastq.gz /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6156067_scaffold_10.2.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/SRR6156067_scaffold_10_mapped --outSAMtype BAM Unsorted
+May 12 18:06:59 ..... started STAR run
+May 12 18:06:59 ..... loading genome
+May 12 18:07:00 ..... started mapping
+May 12 18:07:52 ..... finished mapping
+May 12 18:07:52 ..... started sorting BAM
+May 12 18:08:04 ..... finished successfully
+	STAR --runThreadN 8 --genomeDir /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/10_indexed_genome --readFilesIn /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6156067_scaffold_10.1.fastq.gz /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6156067_scaffold_10.2.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/SRR6156067_scaffold_10_mapped --outSAMtype BAM SortedByCoordinate
 	STAR version: 2.7.9a   compiled: 2021-10-20T18:01:41+0200 rackham5.uppmax.uu.se:/sw/bioinfo/star/2.7.9a/src/STAR-2.7.9a/source
-May 08 21:29:03 ..... started STAR run
-May 08 21:29:03 ..... loading genome
-May 08 21:29:04 ..... started mapping
-May 08 21:29:38 ..... finished mapping
-May 08 21:29:38 ..... finished successfully
-	STAR --runThreadN 8 --genomeDir /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/10_indexed_genome --readFilesIn /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6156069_scaffold_10.1.fastq.gz /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6156069_scaffold_10.2.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/SRR6156069_scaffold_10_mapped --outSAMtype BAM Unsorted
+May 12 18:08:04 ..... started STAR run
+May 12 18:08:04 ..... loading genome
+May 12 18:08:05 ..... started mapping
+May 12 18:08:33 ..... finished mapping
+May 12 18:08:33 ..... started sorting BAM
+May 12 18:08:41 ..... finished successfully
+	STAR --runThreadN 8 --genomeDir /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/10_indexed_genome --readFilesIn /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6156069_scaffold_10.1.fastq.gz /home/mathi/genome_analysis/durianproject/4_Tean_Teh_2017/transcriptome/trimmed/SRR6156069_scaffold_10.2.fastq.gz --readFilesCommand zcat --outFileNamePrefix /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/SRR6156069_scaffold_10_mapped --outSAMtype BAM SortedByCoordinate
 	STAR version: 2.7.9a   compiled: 2021-10-20T18:01:41+0200 rackham5.uppmax.uu.se:/sw/bioinfo/star/2.7.9a/src/STAR-2.7.9a/source
-May 08 21:29:38 ..... started STAR run
-May 08 21:29:38 ..... loading genome
-May 08 21:29:39 ..... started mapping
-May 08 21:30:37 ..... finished mapping
-May 08 21:30:38 ..... finished successfully
-	STAR --runThreadN 8 --genomeDir /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/10_indexed_genome --readFilesIn /home/mathi/genome_analysis/durianproject/analyses/3_trim/3_trim_transcript/SRR6040095_scaffold_10_1P.fq.gz /home/mathi/genome_analysis/durianproject/analyses/3_trim/3_trim_transcript/SRR6040095_scaffold_10_2P.fq.gz --readFilesCommand zcat --outFileNamePrefix /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/SRR6040095_scaffold_10_P_mapped --outSAMtype BAM Unsorted
+May 12 18:08:42 ..... started STAR run
+May 12 18:08:42 ..... loading genome
+May 12 18:08:43 ..... started mapping
+May 12 18:09:36 ..... finished mapping
+May 12 18:09:36 ..... started sorting BAM
+May 12 18:09:54 ..... finished successfully
+	STAR --runThreadN 8 --genomeDir /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/10_indexed_genome --readFilesIn /home/mathi/genome_analysis/durianproject/analyses/3_trim/3_trim_transcript/SRR6040095_scaffold_10_1P.fq.gz /home/mathi/genome_analysis/durianproject/analyses/3_trim/3_trim_transcript/SRR6040095_scaffold_10_2P.fq.gz --readFilesCommand zcat --outFileNamePrefix /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/SRR6040095_scaffold_10_P_mapped --outSAMtype BAM SortedByCoordinate
 	STAR version: 2.7.9a   compiled: 2021-10-20T18:01:41+0200 rackham5.uppmax.uu.se:/sw/bioinfo/star/2.7.9a/src/STAR-2.7.9a/source
-May 08 21:30:38 ..... started STAR run
-May 08 21:30:38 ..... loading genome
-May 08 21:30:39 ..... started mapping
-May 08 21:34:36 ..... finished mapping
-May 08 21:34:36 ..... finished successfully
-	STAR --runThreadN 8 --genomeDir /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/10_indexed_genome --readFilesIn /home/mathi/genome_analysis/durianproject/analyses/3_trim/3_trim_transcript/SRR6040095_scaffold_10_1U.fq.gz /home/mathi/genome_analysis/durianproject/analyses/3_trim/3_trim_transcript/SRR6040095_scaffold_10_2U.fq.gz --readFilesCommand zcat --outFileNamePrefix /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/SRR6040095_scaffold_10_U_mapped --outSAMtype BAM Unsorted
+May 12 18:09:54 ..... started STAR run
+May 12 18:09:54 ..... loading genome
+May 12 18:09:55 ..... started mapping
+May 12 18:14:01 ..... finished mapping
+May 12 18:14:02 ..... started sorting BAM
+May 12 18:14:52 ..... finished successfully
+	STAR --runThreadN 8 --genomeDir /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/10_indexed_genome --readFilesIn /home/mathi/genome_analysis/durianproject/analyses/3_trim/3_trim_transcript/SRR6040095_scaffold_10_1U.fq.gz /home/mathi/genome_analysis/durianproject/analyses/3_trim/3_trim_transcript/SRR6040095_scaffold_10_2U.fq.gz --readFilesCommand zcat --outFileNamePrefix /home/mathi/genome_analysis/durianproject/analyses/10_star_mapping/SRR6040095_scaffold_10_U_mapped --outSAMtype BAM SortedByCoordinate
 	STAR version: 2.7.9a   compiled: 2021-10-20T18:01:41+0200 rackham5.uppmax.uu.se:/sw/bioinfo/star/2.7.9a/src/STAR-2.7.9a/source
-May 08 21:34:36 ..... started STAR run
-May 08 21:34:36 ..... loading genome
-May 08 21:34:38 ..... started mapping
-May 08 21:34:38 ..... finished mapping
-May 08 21:34:38 ..... finished successfully
+May 12 18:14:53 ..... started STAR run
+May 12 18:14:53 ..... loading genome
+May 12 18:14:54 ..... started mapping
+May 12 18:14:55 ..... finished mapping
+May 12 18:14:55 ..... started sorting BAM
+May 12 18:14:55 ..... finished successfully
