@@ -1,5 +1,8 @@
-#Loading the DESeq2 library
+# load packages
 library("DESeq2")
+library("gplots")
+library("RColorBrewer")
+library("genefilter")
 
 #Read in read counts
 SRR6040092 <- read.delim('C:/Users/Mathilda Stigenberg/Dropbox/Uppsala/genomeanalysis/htseq_files/SRR6040092_scaffold_10_mappedAligned_counted', header=FALSE);
@@ -44,29 +47,16 @@ deseq2_data <- DESeqDataSetFromMatrix(countData=matrix_deseq, colData=tissues, d
 
 as.data.frame(colData(deseq2_data))
 dds <- DESeq(deseq2_data)
-res <- results(dds)
 
-dev.off()
-
-#Heat map
-
+# Regularized-logarithm transform
 rld <- rlog(dds)
-sampleDists <-dist(t(assay(rld)))
-sampleDistMatrix <- as.matrix(sampleDists)
-rownames(sampleDistMatrix)<-paste(rld$tis_type, sep="-")
-colnames(sampleDistMatrix)<-NULL
-library("gplots")
-library("RColorBrewer")
-colours = colorRampPalette(rev(brewer.pal(9,"Blues")))
-heatmap.2(sampleDistMatrix, trace="none", col=colours)
 
 #PCA
 dev.off()
 print(plotPCA(rld, intgroup=c("tis_type")))
 
-#Heat map med gene clustering
+#Heat map with gene clustering
 dev.off()
-library("genefilter")
 topVarGenes <- head(order(rowVars(assay(rld)), decreasing=TRUE), 35)
 heatmap.2(assay(rld)[topVarGenes, ], scale="row", trace="none", dendogram="column", margins=c(10,8), col=colorRampPalette(rev(brewer.pal(9, "RdBu")))(255))
 
