@@ -57,7 +57,7 @@ print(plotPCA(rld, intgroup=c("tis_type")))
 
 #Heat map with gene clustering
 dev.off()
-topVarGenes <- head(order(rowVars(assay(rld)), decreasing=TRUE), 35)
-heatmap.2(assay(rld)[topVarGenes, ], scale="row", trace="none", dendogram="column", margins=c(10,8), col=colorRampPalette(rev(brewer.pal(9, "RdBu")))(255))
+topVarGenes <- head(order(rowVars(assay(rld)), decreasing=TRUE), 10)
+heatmap.2(assay(rld)[topVarGenes, ], scale="row", trace="none", dendogram="column", margins=c(8,8), col=colorRampPalette(rev(brewer.pal(9, "RdBu")))(255))
 
 
