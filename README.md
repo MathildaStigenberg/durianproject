@@ -7,16 +7,14 @@
 FastQC is used for doing a quality check on the raw data.
 
 This can be done in the interactive session by writing the commands below.
- 
+
+``` 
 module load bioinfo-tools FastQC/0.11.9
-
 fastqc -o /home/mathi/genome_analysis/durianproject/analyses/1_fastqc_illumina/ -t 2 *.fastq.gz
-
 fastqc -o /home/mathi/genome_analysis/durianproject/analyses/2_fastqc_pacbio/ -t 2 *.fq.gz
-
 fastqc -o /home/mathi/genome_analysis/durianproject/analyses/3_fastqc_transcriptome/trimmed/ -t 2 *.fastq.gz
-
 fastqc -o /home/mathi/genome_analysis/durianproject/analyses/3_fastqc_transcriptome/untrimmed/ -t 2 *.fastq.gz
+```
 
 If one is following this pipeline, one can of course choose their own output directory where to store the results.  
 
@@ -44,8 +42,10 @@ The script for doing this is called 3_trimming_transcriptome.sh and can be found
 Therafter, a quality report can be obtained for this newly trimmed data by doing this command below
 in the interactive session.
 
+```
 module load bioinfo-tools FastQC/0.11.9
 fastqc -o /home/mathi/genome_analysis/durianproject/analyses/4_fastqc/4_fastqc_transcriptome_trimmed/ -t 2 *.fq.gz 
+``` 
 
 #### BWA
 
@@ -91,15 +91,15 @@ The script for doing this is called 11_braker.sh and can be found in the directo
 
 However, before running the script one needs to run the following commands below.
 
+```
 module load bioinfo-tools
-
 module load augustus/20200915-ed0cb90
 
 source $AUGUSTUS_CONFIG_COPY
 
 chmod a+w -R /home/mathi/genome_analysis/durianproject/analyses/11_braker_annotation/augustus_config/species/
-
 cp -vf /sw/bioinfo/GeneMark/4.33-es/snowy/gm_key $HOME/.gm_key 
+```
 
 #### EggNOGmapper
 
@@ -125,8 +125,8 @@ The script for doing this is called 14_deseq2.r and can be found in the director
 However, it is best to run this script in Rstudio and running these commands below before
 running the script, in order to install the package DESeq2.
 
+```
 if (!require("BiocManager", quietly = TRUE))
-
 	install.packages("BiocManager")
-
 BiocManager::install("DESeq2")     
+```
