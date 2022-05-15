@@ -17,8 +17,6 @@ module load MultiQC/1.12
 
 multiqc /home/mathi/genome_analysis/durianproject/analyses/1_fastqc/1_fastqc_illumina/*10* -o /home/mathi/genome_analysis/durianproject/analyses/8_multiqc/8_multiqc_illumina
 
-multiqc /home/mathi/genome_analysis/durianproject/analyses/1_fastqc/1_fastqc_pacbio/*10* -o /home/mathi/genome_analysis/durianproject/analyses/8_multiqc/8_multiqc_pacbio
-
 multiqc /home/mathi/genome_analysis/durianproject/analyses/1_fastqc/1_fastqc_transcriptome/trimmed/*10* -o /home/mathi/genome_analysis/durianproject/analyses/8_multiqc/8_multiqc_transcriptome/8_trimmed
 
 multiqc /home/mathi/genome_analysis/durianproject/analyses/1_fastqc/1_fastqc_transcriptome/untrimmed/*10* -o /home/mathi/genome_analysis/durianproject/analyses/8_multiqc/8_multiqc_transcriptome/8_untrimmed

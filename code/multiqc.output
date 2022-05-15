@@ -20,17 +20,6 @@
 
   /// MultiQC 🔍 | v1.12
 
-|           multiqc | Search path : /home/mathi/genome_analysis/durianproject/analyses/1_fastqc/1_fastqc_pacbio/SRR6037732_scaffold_10_fastqc.html
-|           multiqc | Search path : /home/mathi/genome_analysis/durianproject/analyses/1_fastqc/1_fastqc_pacbio/SRR6037732_scaffold_10_fastqc.zip
-|         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 2/2  
-|            fastqc | Found 1 reports
-|           multiqc | Compressing plot data
-|           multiqc | Report      : ../../../../../../home/mathi/genome_analysis/durianproject/analyses/8_multiqc/8_multiqc_pacbio/multiqc_report.html
-|           multiqc | Data        : ../../../../../../home/mathi/genome_analysis/durianproject/analyses/8_multiqc/8_multiqc_pacbio/multiqc_data
-|           multiqc | MultiQC complete
-
-  /// MultiQC 🔍 | v1.12
-
 |           multiqc | Search path : /home/mathi/genome_analysis/durianproject/analyses/1_fastqc/1_fastqc_transcriptome/trimmed/SRR6040092_scaffold_10.1_fastqc.html
 |           multiqc | Search path : /home/mathi/genome_analysis/durianproject/analyses/1_fastqc/1_fastqc_transcriptome/trimmed/SRR6040092_scaffold_10.1_fastqc.zip
 |           multiqc | Search path : /home/mathi/genome_analysis/durianproject/analyses/1_fastqc/1_fastqc_transcriptome/trimmed/SRR6040092_scaffold_10.2_fastqc.html
