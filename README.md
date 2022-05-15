@@ -9,9 +9,13 @@ FastQC is used for doing a quality check on the raw data.
 This can be done in the interactive session by writing the commands below.
  
 module load bioinfo-tools FastQC/0.11.9
+
 fastqc -o /home/mathi/genome_analysis/durianproject/analyses/1_fastqc_illumina/ -t 2 *.fastq.gz
+
 fastqc -o /home/mathi/genome_analysis/durianproject/analyses/2_fastqc_pacbio/ -t 2 *.fq.gz
+
 fastqc -o /home/mathi/genome_analysis/durianproject/analyses/3_fastqc_transcriptome/trimmed/ -t 2 *.fastq.gz
+
 fastqc -o /home/mathi/genome_analysis/durianproject/analyses/3_fastqc_transcriptome/untrimmed/ -t 2 *.fastq.gz
 
 If one is following this pipeline, one can of course choose their own output directory where to store the results.  
@@ -88,11 +92,13 @@ The script for doing this is called 11_braker.sh and can be found in the directo
 However, before running the script one needs to run the following commands below.
 
 module load bioinfo-tools
+
 module load augustus/20200915-ed0cb90
 
 source $AUGUSTUS_CONFIG_COPY
 
 chmod a+w -R /home/mathi/genome_analysis/durianproject/analyses/11_braker_annotation/augustus_config/species/
+
 cp -vf /sw/bioinfo/GeneMark/4.33-es/snowy/gm_key $HOME/.gm_key 
 
 #### EggNOGmapper
@@ -120,5 +126,7 @@ However, it is best to run this script in Rstudio and running these commands bel
 running the script, in order to install the package DESeq2.
 
 if (!require("BiocManager", quietly = TRUE))
+
 	install.packages("BiocManager")
+
 BiocManager::install("DESeq2")     
