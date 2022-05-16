@@ -37,8 +37,7 @@ Trimmomatic is used for trimming untrimmed transcriptomic reads.
 The script for doing this is called 3_trimming_transcriptome.sh and can be found in the directory: 
 /home/mathi/genome_analysis/durianproject/code
 
-Therafter, a quality report can be obtained for this newly trimmed data by doing this command below
-in the interactive session.
+Therafter, a quality report can be obtained for this newly trimmed data by doing this command below in the interactive session.
 
 ```
 module load bioinfo-tools FastQC/0.11.9
@@ -120,8 +119,7 @@ DESeq2 is used for doing differential expression analysis by plotting a PCA plot
 The script for doing this is called 14_deseq2.r and can be found in the directory:
 /home/mathi/genome_analysis/durianproject/code
 
-However, it is best to run this script in Rstudio and running these commands below before
-running the script, in order to install the package DESeq2.
+However, it is best to run this script in Rstudio and run these commands below before running the script, in order to install the package DESeq2.
 
 ```
 if (!require("BiocManager", quietly = TRUE))
