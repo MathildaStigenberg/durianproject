@@ -1,6 +1,4 @@
-### This is a README-file concerning paper 4, the one about the durian fruit. The durian fruit is analyzed 
-### by assembling its genome, doing annotation and expression analysis. The pipeline for doing these analyses
-### is explained below so one can remake this project and follow the correct order when running the scripts. 
+### This is a README-file concerning paper 4, the one about the durian fruit. The durian fruit is analyzed by assembling its genome, doing annotation and expression analysis. The pipeline for doing these analyses is explained below so one can remake this project and follow the correct order when running the scripts. 
 
 #### FastQC
 
