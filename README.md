@@ -108,14 +108,14 @@ The script for doing this is called 12_eggnogmapper.sh and can be found in the d
 
 #### HTseq
 
-HTseq is used for expression analysis by counting how many genes each transcriptomic read map to. 
+HTseq is used for differential expression analysis by counting how many genes each transcriptomic read map to. 
 
 The script for doing this is called 13_htseq.sh and can be found in the directory:
 /home/mathi/genome_analysis/durianproject/code
 
 #### DESeq2
 
-DESeq2 is used for doing expression analysis on the genome. 
+DESeq2 is used for doing differential expression analysis by plotting a PCA plot visualizing how the transcriptomic data differ in expression and a heatmap visualizing how varied the genes are in expression level.   
 
 The script for doing this is called 14_deseq2.r and can be found in the directory:
 /home/mathi/genome_analysis/durianproject/code
