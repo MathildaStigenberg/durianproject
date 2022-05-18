@@ -72,9 +72,9 @@ RepeatMasker is used for masking the repeats in the genome.
 The script for doing this is called 9_repeatmasker.sh and can be found in the directory:
 /home/mathi/genome_analysis/durianproject/code
 
-#### Star
+#### STAR
 
-Star is used for mapping the trimmed transcriptomic reads to the assembled masked genome. 
+STAR is used for mapping the trimmed transcriptomic reads to the assembled masked genome. 
 
 The script for doing this is called 10_star.sh and can be found in the directory:
 /home/mathi/genome_analysis/durianproject/code
